@@ -1,0 +1,874 @@
+{
+  "tables": [
+    {
+      "name": "dados_diarios",
+      "schema": [
+        {
+          "name": "index",
+          "type": "INTEGER"
+        },
+        {
+          "name": "data",
+          "type": "TEXT"
+        },
+        {
+          "name": "total_bruto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "total_desconto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_custo",
+          "type": "REAL"
+        },
+        {
+          "name": "total_requisicao",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tiket_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio_p",
+          "type": "REAL"
+        },
+        {
+          "name": "total_itens",
+          "type": "INTEGER"
+        },
+        {
+          "name": "itens_por_requisicao",
+          "type": "REAL"
+        },
+        {
+          "name": "total_projecao",
+          "type": "REAL"
+        },
+        {
+          "name": "dinheiro",
+          "type": "REAL"
+        },
+        {
+          "name": "cheque",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cheque_pre",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cartao",
+          "type": "REAL"
+        },
+        {
+          "name": "convenio",
+          "type": "REAL"
+        },
+        {
+          "name": "deposito",
+          "type": "REAL"
+        },
+        {
+          "name": "outros",
+          "type": "INTEGER"
+        },
+        {
+          "name": "devolucao_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "beneficio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "subsidio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "vlr_cliente_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "hr_inicio",
+          "type": "INTEGER"
+        },
+        {
+          "name": "hr_final",
+          "type": "INTEGER"
+        },
+        {
+          "name": "loja_nome",
+          "type": "TEXT"
+        },
+        {
+          "name": "hora",
+          "type": "REAL"
+        },
+        {
+          "name": "total_req",
+          "type": "REAL"
+        },
+        {
+          "name": "entregas_req",
+          "type": "REAL"
+        }
+      ],
+      "sample_data": [
+        {
+          "index": 0,
+          "data": "2025-01-29T00:00:00",
+          "total_bruto": 0.0,
+          "total_liquido": 0.0,
+          "total_desconto": 0.0,
+          "total_custo": 0.0,
+          "total_requisicao": 0,
+          "tiket_medio": 0.0,
+          "desconto_medio": 0.0,
+          "desconto_medio_p": 0.0,
+          "total_itens": 0,
+          "itens_por_requisicao": 0.0,
+          "total_projecao": 0.0,
+          "dinheiro": 0.0,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 0.0,
+          "convenio": 0.0,
+          "deposito": 0.0,
+          "outros": 0,
+          "devolucao_liquido": 0.0,
+          "beneficio_pbm": 0.0,
+          "subsidio_pbm": 0.0,
+          "vlr_cliente_pbm": 0.0,
+          "hr_inicio": 86399,
+          "hr_final": 0,
+          "loja_nome": "_Alpha_",
+          "hora": null,
+          "total_req": null,
+          "entregas_req": null
+        },
+        {
+          "index": 1,
+          "data": "2025-01-28T00:00:00",
+          "total_bruto": 8534.27,
+          "total_liquido": 229.75,
+          "total_desconto": 94.69,
+          "total_custo": 4143.5854,
+          "total_requisicao": 217,
+          "tiket_medio": 38.89207373271889,
+          "desconto_medio": 0.43635944700460827,
+          "desconto_medio_p": 1.1219752641719138,
+          "total_itens": 388,
+          "itens_por_requisicao": 1.7880184331797235,
+          "total_projecao": 8439.58,
+          "dinheiro": 1239.78,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 5418.67,
+          "convenio": 585.25,
+          "deposito": 1133.31,
+          "outros": 0,
+          "devolucao_liquido": 76.0,
+          "beneficio_pbm": 138.6,
+          "subsidio_pbm": 279.98,
+          "vlr_cliente_pbm": 0.0,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 6.0,
+          "total_req": 3.0,
+          "entregas_req": 0.0
+        },
+        {
+          "index": 2,
+          "data": "2025-01-28T00:00:00",
+          "total_bruto": 8534.27,
+          "total_liquido": 114.0,
+          "total_desconto": 94.69,
+          "total_custo": 4143.5854,
+          "total_requisicao": 217,
+          "tiket_medio": 38.89207373271889,
+          "desconto_medio": 0.43635944700460827,
+          "desconto_medio_p": 1.1219752641719138,
+          "total_itens": 388,
+          "itens_por_requisicao": 1.7880184331797235,
+          "total_projecao": 8439.58,
+          "dinheiro": 1239.78,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 5418.67,
+          "convenio": 585.25,
+          "deposito": 1133.31,
+          "outros": 0,
+          "devolucao_liquido": 76.0,
+          "beneficio_pbm": 138.6,
+          "subsidio_pbm": 279.98,
+          "vlr_cliente_pbm": 0.0,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 7.0,
+          "total_req": 4.0,
+          "entregas_req": 0.0
+        },
+        {
+          "index": 3,
+          "data": "2025-01-28T00:00:00",
+          "total_bruto": 8534.27,
+          "total_liquido": 331.97,
+          "total_desconto": 94.69,
+          "total_custo": 4143.5854,
+          "total_requisicao": 217,
+          "tiket_medio": 38.89207373271889,
+          "desconto_medio": 0.43635944700460827,
+          "desconto_medio_p": 1.1219752641719138,
+          "total_itens": 388,
+          "itens_por_requisicao": 1.7880184331797235,
+          "total_projecao": 8439.58,
+          "dinheiro": 1239.78,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 5418.67,
+          "convenio": 585.25,
+          "deposito": 1133.31,
+          "outros": 0,
+          "devolucao_liquido": 76.0,
+          "beneficio_pbm": 138.6,
+          "subsidio_pbm": 279.98,
+          "vlr_cliente_pbm": 0.0,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 8.0,
+          "total_req": 11.0,
+          "entregas_req": 1.0
+        },
+        {
+          "index": 4,
+          "data": "2025-01-28T00:00:00",
+          "total_bruto": 8534.27,
+          "total_liquido": 361.66,
+          "total_desconto": 94.69,
+          "total_custo": 4143.5854,
+          "total_requisicao": 217,
+          "tiket_medio": 38.89207373271889,
+          "desconto_medio": 0.43635944700460827,
+          "desconto_medio_p": 1.1219752641719138,
+          "total_itens": 388,
+          "itens_por_requisicao": 1.7880184331797235,
+          "total_projecao": 8439.58,
+          "dinheiro": 1239.78,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 5418.67,
+          "convenio": 585.25,
+          "deposito": 1133.31,
+          "outros": 0,
+          "devolucao_liquido": 76.0,
+          "beneficio_pbm": 138.6,
+          "subsidio_pbm": 279.98,
+          "vlr_cliente_pbm": 0.0,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 9.0,
+          "total_req": 15.0,
+          "entregas_req": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dados_mensais",
+      "schema": [
+        {
+          "name": "index",
+          "type": "INTEGER"
+        },
+        {
+          "name": "data",
+          "type": "TEXT"
+        },
+        {
+          "name": "total_bruto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "total_desconto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_custo",
+          "type": "REAL"
+        },
+        {
+          "name": "total_requisicao",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tiket_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio_p",
+          "type": "REAL"
+        },
+        {
+          "name": "total_itens",
+          "type": "INTEGER"
+        },
+        {
+          "name": "itens_por_requisicao",
+          "type": "REAL"
+        },
+        {
+          "name": "total_projecao",
+          "type": "REAL"
+        },
+        {
+          "name": "dinheiro",
+          "type": "REAL"
+        },
+        {
+          "name": "cheque",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cheque_pre",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cartao",
+          "type": "REAL"
+        },
+        {
+          "name": "convenio",
+          "type": "REAL"
+        },
+        {
+          "name": "deposito",
+          "type": "REAL"
+        },
+        {
+          "name": "outros",
+          "type": "INTEGER"
+        },
+        {
+          "name": "devolucao_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "beneficio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "subsidio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "vlr_cliente_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "hr_inicio",
+          "type": "INTEGER"
+        },
+        {
+          "name": "hr_final",
+          "type": "INTEGER"
+        },
+        {
+          "name": "loja_nome",
+          "type": "TEXT"
+        },
+        {
+          "name": "hora",
+          "type": "INTEGER"
+        },
+        {
+          "name": "total_req",
+          "type": "INTEGER"
+        },
+        {
+          "name": "entregas_req",
+          "type": "INTEGER"
+        }
+      ],
+      "sample_data": [
+        {
+          "index": 0,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 3995.1999999999994,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 6,
+          "total_req": 105,
+          "entregas_req": 4
+        },
+        {
+          "index": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 10772.170000000004,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 7,
+          "total_req": 229,
+          "entregas_req": 16
+        },
+        {
+          "index": 2,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 13401.430000000002,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 8,
+          "total_req": 338,
+          "entregas_req": 41
+        },
+        {
+          "index": 3,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 15860.5,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 9,
+          "total_req": 342,
+          "entregas_req": 60
+        },
+        {
+          "index": 4,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 16322.559999999996,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 10,
+          "total_req": 378,
+          "entregas_req": 57
+        }
+      ]
+    },
+    {
+      "name": "dados_mensais_hoje",
+      "schema": [
+        {
+          "name": "index",
+          "type": "INTEGER"
+        },
+        {
+          "name": "empresa",
+          "type": "INTEGER"
+        },
+        {
+          "name": "data",
+          "type": "TEXT"
+        },
+        {
+          "name": "total_bruto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "total_desconto",
+          "type": "REAL"
+        },
+        {
+          "name": "total_custo",
+          "type": "REAL"
+        },
+        {
+          "name": "total_requisicao",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tiket_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio",
+          "type": "REAL"
+        },
+        {
+          "name": "desconto_medio_p",
+          "type": "REAL"
+        },
+        {
+          "name": "total_itens",
+          "type": "INTEGER"
+        },
+        {
+          "name": "itens_por_requisicao",
+          "type": "REAL"
+        },
+        {
+          "name": "total_projecao",
+          "type": "REAL"
+        },
+        {
+          "name": "dinheiro",
+          "type": "REAL"
+        },
+        {
+          "name": "cheque",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cheque_pre",
+          "type": "INTEGER"
+        },
+        {
+          "name": "cartao",
+          "type": "REAL"
+        },
+        {
+          "name": "convenio",
+          "type": "REAL"
+        },
+        {
+          "name": "deposito",
+          "type": "REAL"
+        },
+        {
+          "name": "outros",
+          "type": "INTEGER"
+        },
+        {
+          "name": "devolucao_liquido",
+          "type": "REAL"
+        },
+        {
+          "name": "beneficio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "subsidio_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "vlr_cliente_pbm",
+          "type": "REAL"
+        },
+        {
+          "name": "hr_inicio",
+          "type": "INTEGER"
+        },
+        {
+          "name": "hr_final",
+          "type": "INTEGER"
+        },
+        {
+          "name": "loja_nome",
+          "type": "TEXT"
+        },
+        {
+          "name": "hora",
+          "type": "INTEGER"
+        },
+        {
+          "name": "total_req",
+          "type": "INTEGER"
+        },
+        {
+          "name": "entregas_req",
+          "type": "INTEGER"
+        }
+      ],
+      "sample_data": [
+        {
+          "index": 0,
+          "empresa": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 3995.1999999999994,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 6,
+          "total_req": 105,
+          "entregas_req": 4
+        },
+        {
+          "index": 1,
+          "empresa": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 10772.170000000004,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 7,
+          "total_req": 229,
+          "entregas_req": 16
+        },
+        {
+          "index": 2,
+          "empresa": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 13401.430000000002,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 8,
+          "total_req": 338,
+          "entregas_req": 41
+        },
+        {
+          "index": 3,
+          "empresa": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 15860.5,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 9,
+          "total_req": 342,
+          "entregas_req": 60
+        },
+        {
+          "index": 4,
+          "empresa": 1,
+          "data": "2025-01-01T00:00:00",
+          "total_bruto": 313869.47000000003,
+          "total_liquido": 16322.559999999996,
+          "total_desconto": 3174.2799999999997,
+          "total_custo": 152902.5605,
+          "total_requisicao": 7289,
+          "tiket_medio": 42.625214707092894,
+          "desconto_medio": 0.43548909315406775,
+          "desconto_medio_p": 1.0216701455854527,
+          "total_itens": 13100,
+          "itens_por_requisicao": 1.7972287007820003,
+          "total_projecao": 332122.44448275876,
+          "dinheiro": 57184.329999999994,
+          "cheque": 0,
+          "cheque_pre": 0,
+          "cartao": 191334.45,
+          "convenio": 20659.220000000005,
+          "deposito": 46042.7,
+          "outros": 0,
+          "devolucao_liquido": 7296.590000000002,
+          "beneficio_pbm": 2771.0800000000004,
+          "subsidio_pbm": 4505.639999999999,
+          "vlr_cliente_pbm": 547.56,
+          "hr_inicio": 6,
+          "hr_final": 22,
+          "loja_nome": "_Alpha_",
+          "hora": 10,
+          "total_req": 378,
+          "entregas_req": 57
+        }
+      ]
+    }
+  ]
+}

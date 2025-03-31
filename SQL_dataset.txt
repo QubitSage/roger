@@ -1,0 +1,86 @@
+liste os valores das vendas mensal por loja e em seguida faça uma analise de desempenho.
+<:>
+  SELECT loja_nome, total_liquido, data, hora FROM dados_mensais
+
+
+com base nas informações de vendas por hora do mês de dezembro o que podemos analisar loja por loja.
+<:>
+  SELECT d1.loja_nome, d1.total_liquido, d1.data, d1.hora
+  FROM dados_diarios d1
+  WHERE d1.data LIKE '%-12-%'
+  AND d1.total_liquido = (
+      SELECT MAX(d2.total_liquido)
+      FROM dados_diarios d2
+      WHERE d2.loja_nome = d1.loja_nome
+      AND d2.data LIKE '%-12-%'
+  );
+  
+ 
+ com base nas informações de vendas por hora do mês de dezembro de 2025 o que podemos analisar loja por loja.
+<:>
+  SELECT d1.loja_nome, d1.total_liquido, d1.data, d1.hora
+  FROM dados_diarios d1
+  WHERE d1.data LIKE '2025-12-%'
+  AND d1.total_liquido = (
+      SELECT MAX(d2.total_liquido)
+      FROM dados_diarios d2
+      WHERE d2.loja_nome = d1.loja_nome
+      AND d2.data LIKE '2025-12-%'
+  );
+
+  
+Qual foi o lucro todo loja por loja em dezembro?
+<:>
+  SELECT loja_nome, SUM(total_liquido) FROM dados_mensais WHERE data LIKE '%-12-%' 
+  GROUP BY loja_nome
+
+
+Qual foi o lucro todo loja por loja em dezembro de 2024?
+<:>
+  SELECT loja_nome, SUM(total_liquido) FROM dados_mensais WHERE data LIKE '2024-12-%' 
+  GROUP BY loja_nome
+
+
+Qual foi o lucro todo loja por loja em primeiro de dezembro de 2025?
+<:>
+  SELECT loja_nome, SUM(total_liquido) FROM dados_mensais WHERE data LIKE '2025-12-01'
+  GROUP BY loja_nome
+
+
+Qual foi o lucro todo loja por loja dia 1 de novembro de 2019?
+<:>
+  SELECT loja_nome, SUM(total_liquido) FROM dados_mensais WHERE data LIKE '2019-12-01'
+  GROUP BY loja_nome
+
+
+1)Quais são os dias da semana com maior volume de vendas?
+"converter as datas em dias da semana"
+<:>
+  SELECT data, loja_nome, total_liquido FROM dados_diarios ORDER BY total_liquido DESC LIMIT 20
+
+
+2)Como está o desempenho das vendas por horário do dia?
+"período mensal e diário"
+<:>
+  SELECT data, loja_nome, MAX(total_liquido), hora FROM dados_diarios GROUP BY loja_nome ORDER BY hora DESC 
+<:>
+  SELECT data, loja_nome, MAX(total_liquido) FROM dados_mensais GROUP BY loja_nome ORDER BY hora DESC 
+
+
+3)Qual é o impacto dos descontos nas vendas?
+<:>
+  SELECT data, loja_nome, MAX(total_liquido), MAX(total_desconto) FROM dados_mensais GROUP BY loja_nome ORDER BY hora DESC 
+
+
+4)Quais formas de pagamento são mais utilizadas?
+<:>
+  SELECT data, loja_nome, MAX(dinheiro), MAX(cheque), MAX(cartao), MAX(convenio), MAX(deposito), MAX(outros) FROM dados_mensais GROUP BY loja_nome, data ORDER BY hora DESC 
+
+
+5)Como está a evolução do ticket médio?
+<:>
+  SELECT data, loja_nome, tiket_medio, hora FROM dados_diarios WHERE loja_nome IN ('_Alpha_', '_Beta_', '_Charlie_', '_Delta_', '_Echo_')  ORDER BY data DESC, loja_nome LIMIT 75
+
+6)Quais são os horários com maior número de entregas?
+<:>
+  SELECT data, loja_nome, MAX(entregas_req), hora FROM dados_diarios GROUP BY loja_nome ORDER BY hora DESC
